@@ -11,12 +11,10 @@ dns:
   enhanced-mode: redir-host
   listen: 0.0.0.0:7874
   nameserver:
-  - 8.8.8.8
-  - 8.8.4.4
-  - tls://1.1.1.1
-  - tls://8.8.8.8
-  - https://cloudflare-dns.com/dns-query
-  - https://dns.google/dns-query
+  - "tls://1.1.1.1#\U0001F680 节点选择"
+  - "tls://8.8.8.8#\U0001F680 节点选择"
+  - "https://cloudflare-dns.com/dns-query#\U0001F680 节点选择"
+  - "https://dns.google/dns-query#\U0001F680 节点选择"
   default-nameserver:
   - tls://1.12.12.12
   - 119.29.29.29
