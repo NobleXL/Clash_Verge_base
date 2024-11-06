@@ -19,12 +19,10 @@ dns:
     - '*.lan'
     - "+.local"
     - localhost.ptlogin2.qq.com
-    - 'dns.msftncsi.com'
-    - 'www.msftncsi.com'
-    - 'www.msftconnecttest.com'
   default-nameserver:
+    - tls://1.12.12.12
     - 223.5.5.5
-    - 223.6.6.6
+    - 119.29.29.29
   nameserver-policy:
     'www.google.com': 'https://dns.google/dns-query'      # Google域名使用Google DNS
     'www.facebook.com': 'https://dns.google/dns-query'    # Facebook域名使用Google DNS
@@ -47,7 +45,10 @@ dns:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
   fallback:
-    - tls://1.1.1.1:853
+    - tls://1dot1dot1dot1.cloudflare-dns.com
+    - tcp://1.1.1.1
+    - https://1.0.0.1/dns-query
+    - https://1.1.1.1/dns-query
     - tls://8.8.8.8:853
   fallback-filter:
     geoip: true
