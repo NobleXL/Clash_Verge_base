@@ -1,0 +1,7 @@
+rule-providers:
+  collection: 
+    type: http
+    behavior: classical
+    format: yaml
+    path: ./rules/collection.yaml
+    url: "https://gist.githubusercontent.com/cnfree8964/0864fd1d2e88936a095fb40d74ce4993/raw/collection.yaml"
